@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new Vistas.VNotas();
+            MainPage = new NavigationPage (new Vistas.Login());
         }
     }
 }

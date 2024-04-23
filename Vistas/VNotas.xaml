@@ -5,6 +5,12 @@
              Title="VNotas">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
+
+
+            <Label x:Name="lblUsuario"
+            FontSize="Title"
+            HorizontalTextAlignment="End" />
+
             <Label 
             Text="Sistema de gestión académico - Calificaciones - Uisrael"
             FontSize="Title"
@@ -33,7 +39,7 @@
 
             <Label Text="Ingrese las calificaciones del primer Parcial" TextColor="#0487D9" FontSize="Subtitle" />
 
-            <Frame BorderColor="#3498DB" BackgroundColor="Transparent">
+            <Frame BorderColor="White" BackgroundColor="Transparent">
                 <Grid RowSpacing="5">
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -84,7 +90,7 @@
 
             <Label Text="Ingrese la calificaciones del Parcial 2" TextColor="#0487D9" FontSize="Subtitle" />
 
-            <Frame BorderColor="#0487D9" BackgroundColor="Transparent">
+            <Frame BorderColor="White" BackgroundColor="Transparent">
 
                 <Grid RowSpacing="5">
                     <Grid.RowDefinitions>
@@ -133,7 +139,7 @@
 
             <Label Text="Calificación Final" TextColor="#0487D9" FontSize="Subtitle" />
 
-            <Frame BorderColor="#0487D9" BackgroundColor="Transparent">
+            <Frame BorderColor="White" BackgroundColor="Transparent">
 
                 <Grid RowSpacing="5">
                     <Grid.RowDefinitions>

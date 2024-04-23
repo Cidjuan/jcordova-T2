@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcordova_T2.Vistas.Login"
+             Title="Login">
+    <ScrollView>
+        <VerticalStackLayout
+     Spacing="25"
+     Padding="30">
+            <Label 
+         Text="INICIAR SESIÓN" 
+         TextColor="White"
+         FontSize="24"
+         HorizontalTextAlignment="Center"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" 
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+                
+                <Entry x:Name="txtUsuario"  Placeholder="INGRESE SU NOMBRE"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
+                <Label Text="CONTRASEÑA" 
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="0"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+                <Entry x:Name="txtContraaseña"  Placeholder="INGRESE LA CONTRASEÑA"
+                IsPassword="True"
+                Grid.Row="1"
+                Grid.Column="1"/>
+
+                <Button x:Name="btnInicio" 
+             Text="INICIAR SESIÓN"
+             Clicked="btnInicio_Clicked"
+             Grid.Row="2"
+             Grid.Column="0"
+             />
+
+                <Button x:Name="btnRegistro"          
+             Text="REGISTRARSE"
+             Clicked="btnRegistro_Clicked"
+             Grid.Row="2"
+             Grid.Column="1"
+             />
+
+
+
+            </Grid>
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

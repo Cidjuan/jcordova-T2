@@ -2,10 +2,13 @@ namespace jcordova_T2.Vistas;
 
 public partial class VNotas : ContentPage
 {
-    public VNotas()
+    public VNotas(string usuario)
     {
         InitializeComponent();
+        DisplayAlert("Alerta", "Bienvenido " + usuario, "Center");
+        lblUsuario.Text = "Usuario conectado: " + usuario;
     }
+
 
     private void btnCalcular_Clicked(object sender, EventArgs e)
     {
